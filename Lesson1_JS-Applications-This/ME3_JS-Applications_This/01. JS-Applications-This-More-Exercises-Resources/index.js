@@ -7,9 +7,9 @@ function solve() {
 
   function changeBackground() {
     tableRowArr.forEach((tableRow) => {
-      tableRow.removeAttribute("style");
-      
+      tableRow.removeAttribute("style");      
    });
+
    this.style.backgroundColor !== ""
      ? this.removeAttribute("style")
      : (this.style.backgroundColor = "#413f5e");
