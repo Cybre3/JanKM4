@@ -8,17 +8,14 @@ class Hex {
     }
 
     toString() {
-        console.log(this);
-        return this;
+        let hexValue = this.value.toString(16);
+        return `0x${hexValue.toUpperCase()}`;
     }
 
     plus(number) {
-        // let newHex = this.value + number.value;
+        let newHex = this.value + number.value;
         
-        // return newHex;
-            let sum = this.value + number.value;
-            let hex = sum.toString(16).toUpperCase();
-            return `0x${hex}`;
+        return newHex;            
     }
 
     minus(number) {}
@@ -28,10 +25,12 @@ class Hex {
     }
 }
 
-// let FF = new Hex(255);
-// console.log(FF.toString());
-// FF.valueOf() + 1 == 256;
+let FF = new Hex(255);
+console.log(FF.toString()); // 0xFF
+FF.valueOf() + 1 == 256;
 let a = new Hex(10);
 let b = new Hex(5);
 console.log(a.plus(b).toString()); // 0xF
-// console.log(a.plus(b).toString() === "0xF"); // True
+console.log(a.plus(b).toString() === "0xF"); // True
+
+
