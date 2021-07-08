@@ -1,0 +1,22 @@
+[33mcommit 096462e65ab790ee847c69dd6b13eae8198d2ac5[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: Cybre3 <71160954+Cybre3@users.noreply.github.com>
+Date:   Sat Jul 3 16:14:41 2021 -0400
+
+    working on ME lesson 1
+
+[1mdiff --git a/Lesson1_JS-Applications-This/ME3_JS-Applications_This/01. JS-Applications-This-More-Exercises-Resources/index.js b/Lesson1_JS-Applications-This/ME3_JS-Applications_This/01. JS-Applications-This-More-Exercises-Resources/index.js[m
+[1mindex b161de0..7ef4e9a 100644[m
+[1m--- a/Lesson1_JS-Applications-This/ME3_JS-Applications_This/01. JS-Applications-This-More-Exercises-Resources/index.js[m	
+[1m+++ b/Lesson1_JS-Applications-This/ME3_JS-Applications_This/01. JS-Applications-This-More-Exercises-Resources/index.js[m	
+[36m@@ -7,9 +7,9 @@[m [mfunction solve() {[m
+ [m
+   function changeBackground() {[m
+     tableRowArr.forEach((tableRow) => {[m
+[31m-      tableRow.removeAttribute("style");[m
+[31m-      [m
+[32m+[m[32m      tableRow.removeAttribute("style");[m[41m      [m
+    });[m
+[32m+[m
+    this.style.backgroundColor !== ""[m
+      ? this.removeAttribute("style")[m
+      : (this.style.backgroundColor = "#413f5e");[m
